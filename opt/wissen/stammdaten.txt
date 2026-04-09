@@ -1,0 +1,10 @@
+- Instructions for Stammdaten: If you cannot find a value, write "none"
+Datenmodell:
+  - e0100201-e0100901: Nachname
+  - e0100301-e0100801: Vorname 
+  - e0100401-e0101001: Geburtsdatum
+  - e0100081-e0100082: Steuer-Identifikationsnummer
+  - f2270-f2271: Straße und Hausnummer
+  - e0100601-e0101701: Postleitzahl
+  - e0100602-e0101702: Wohnort
+

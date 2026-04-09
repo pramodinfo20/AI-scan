@@ -1,0 +1,8 @@
+- Instructions for Wohngebäudeversicherung: Extrahiere folgende Daten und aktualisiere den Bereich Zusatzdaten des Datenmodell. Führe "Weitere Anweisungen" am Schluss aus. Also write the ErrorMessage:
+Datenmodell:
+  - DocumentType: wgv
+  - DocumentAction: replace
+  - Steuerjahr: Find out, when the insurance is to be paid. Only the year. Write none, if it is unclear
+  - ErrorMessage: Die Wohngebäudeversicherung lässt sich nicht in der Steuererklaerung angeben. 
+Seite: Wohngebäudeversicherung
+  - f00_savefile: true  

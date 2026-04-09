@@ -1,0 +1,13 @@
+- Instructions for Kindergeldbescheid: Extrahiere folgende Daten und aktualisiere den Bereich Zusatzdaten des Datenmodell. Führe "Weitere Anweisungen" am Schluss aus:
+Datenmodell:
+  - DocumentType: kindergeldbescheid
+  - DocumentAction: addFeldmzi_f82
+  - ErrorMessage: none
+- Seite: Kinder (SeitenID=96)
+  - f82_savefile: Name des Kindes 
+  - 0500701: Geburtstag des Kindes
+  - f1053: ID for Familienkasse from this List:  <option value="1">Familienkasse Baden-Württemberg-Ost</option><option value="2">Familienkasse Baden-Württemberg-West</option><option value="3">Familienkasse Bayern-Nord</option><option value="4">Familienkasse Bayern-Süd</option><option value="5">Familienkasse Berlin-Brandenburg</option><option value="6">Familienkasse Hessen</option><option value="7">Familienkasse Niedersachsen-Bremen</option><option value="8">Familienkasse Nord</option><option value="9">Familienkasse Nordrhein-Westfalen-Nord</option><option value="10">Familienkasse Nordrhein-Westfalen-Ost</option><option value="11">Familienkasse Nordrhein-Westfalen-West</option><option value="12">Familienkasse Rheinland-Pfalz-Saarland</option><option value="13">Familienkasse Sachsen</option><option value="14">Familienkasse Sachsen-Anhalt-Thüringen</option></select><option value="1">Familienkasse Baden-Württemberg-Ost</option><option value="2">Familienkasse Baden-Württemberg-West</option><option value="3">Familienkasse Bayern-Nord</option><option value="4">Familienkasse Bayern-Süd</option><option value="5">Familienkasse Berlin-Brandenburg</option><option value="6">Familienkasse Hessen</option><option value="7">Familienkasse Niedersachsen-Bremen</option><option value="8">Familienkasse Nord</option><option value="9">Familienkasse Nordrhein-Westfalen-Nord</option><option value="10">Familienkasse Nordrhein-Westfalen-Ost</option><option value="11">Familienkasse Nordrhein-Westfalen-West</option><option value="12">Familienkasse Rheinland-Pfalz-Saarland</option><option value="13">Familienkasse Sachsen</option><option value="14">Familienkasse Sachsen-Anhalt-Thüringen</option>
+  - f50_feldmzi_1: write "1"
+Weitere Anweisungen:
+ - f50_feldmzi_1: write "1"
+

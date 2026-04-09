@@ -1,0 +1,12 @@
+- Instructions for Minikob: Extrahiere folgende Daten und aktualisiere den Bereich Zusatzdaten des Datenmodell. Führe "Weitere Anweisungen" am Schluss aus:
+Datenmodell:
+  - DocumentType: minijob
+  - DocumentAction: addFeldmzi_f2639
+  - ErrorMessage: none
+- Seite: Angestellte Minijobber (SeitenID=85)
+  - f2639_savefile: Vor- und Nachname der beschäftigten Person
+  - f2640: Summe der Aufwendungen fuer geringfuegige Beschaeftigungen im Privathaushalt
+
+Weitere Anweisungen:
+ - f2632_feldmzi_1: [(if f2639_savefile!=null) then 1]
+ - f146_feldmzi_1: [(if f2639_savefile!=null) then 1]

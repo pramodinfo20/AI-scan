@@ -1,0 +1,12 @@
+- Instructions for Private Haftpflichtversicherung or Tierhalter Haftpflichtversicherung or Hunde Haftpflichtversicherung: Extrahiere folgende Daten und aktualisiere den Bereich Zusatzdaten des Datenmodell. Führe "Weitere Anweisungen" am Schluss aus:
+Datenmodell:
+  - DocumentType: phv
+  - DocumentAction: addFeldmzi_f1076
+  - Steuerjahr: Find out, when the insurance is to be paid. Only the year. Write none, if it is unclear
+  - ErrorMessage: none
+- Seite: Private Haftpflichtversicherungen
+  - f1076_savefile: Art der Versicherung, Name der Versicherung und Vertragsnummer
+  - f1077: Versicherungsbeitrag (inkl. Versicherungssteuer)
+  - f1072_feldmzi_1: [(if f1077!=null) then 1]
+Weitere Anweisungen:
+ - f1072_feldmzi_1: [(if f1077!=null) then 1]

@@ -1,0 +1,8 @@
+- Instructions for Rechtsschutzversicherung: Extrahiere folgende Daten und aktualisiere das Datenmodell. Also write the ErrorMessage
+Datenmodell:
+  - DocumentType: rechtsschutzversicherung_normal
+  - DocumentAction: replace
+  - Steuerjahr: Find out, when the insurance is to be paid. Only the year. Write none, if it is unclear
+  - ErrorMessage: Die "Rechtsschutzversicherung" kann nur angesetzt werden, wenn "Arbeitsrechtschutz" angegeben wird. Dann gehört die Angabe zu "Arbeitnehmer > Werbungskosten > Berufsbedingte Versicherungen".
+Seite: Hausratversicherung
+  - f00_savefile: true

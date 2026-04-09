@@ -1,0 +1,7 @@
+- Instructions for Zuteilung der Identifikationsnummer: Extrahiere folgende Daten und aktualisiere das Datenmodell. Ignore IDs e0100081-e0100082 from stammdaten and use e0100081_savefile-e0100082_savefile.
+Datenmodell:
+  - DocumentType: steuerid
+  - DocumentAction: 
+  - ErrorMessage: none
+Seite: Persönliche Angaben (SeitenID= 4 Ehemann/ 3 Ehefrau)
+ - e0100081_savefile-e0100082_savefile: persönliche Identifikationsnummer or Steuer-Identifikationsnummer (it should have 11 digits)

@@ -1,0 +1,11 @@
+- Instructions for Krankengeld bei Erkrankung eines Kindes: Extrahiere folgende Daten und aktualisiere den Bereich Zusatzdaten des Datenmodell. Führe "Weitere Anweisungen" am Schluss aus:
+Datenmodell:
+  - DocumentType: krankengeld_kind
+  - DocumentAction: [if (zuordnung=="Steuerpflichtiger") then addFeldmzi_f1943 else addFeldmzi_f1947]
+  - ErrorMessage: none
+- Seite: Ersatzleistungen Ehemann (SeitenID=78) / Ersatzleistungen Ehefrau (SeitenID=480)
+  - f1943_savefile-f1947_savefile: Bezeichnung der erhaltenen Leistung und Zeitraum der Erkrankung
+  - f1944-f1948: write "1"
+  - f1945-f1949: Hoehe der erhaltenen Leistung
+Weitere Anweisungen:
+ - f260-f1121: write "1"

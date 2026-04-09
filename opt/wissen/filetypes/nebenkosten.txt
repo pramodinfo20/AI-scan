@@ -1,0 +1,14 @@
+- Instructions for Nebenkostenabrechnung: Extrahiere folgende Daten und aktualisiere den Bereich Zusatzdaten des Datenmodell. 
+Datenmodell:
+  - DocumentType: nebenkosten
+  - DocumentAction: addFeldmzi_f2634
+  - Steuerjahr: Find out, when the Abrechnung was paid. Only the year. Write none, if it is unclear
+  - ErrorMessage: none
+- Seite: Haushaltsnahe Dienstleistungen > Nebenkostenabrechnung (SeitenID=661)
+  - f2634_savefile: Name Hausverwaltung und Objektbezeichnung
+  - f2628: Aufwendungen für Handwerkerleistungen (Rechnungsbetrag). Nicht Gesamtkosten, sondern nur Anteil des Mieters
+  - f2629: Write the same value as for f2629
+  - f2627: Aufwendungen für Haushaltsnahe Dienstleistungen. Nicht Gesamtkosten, sondern nur Anteil des Mieters. If emtpy, write "0"
+  - f2630: Aufwendungen für sozialversicherungspflichtige Beschäftigungen. Nicht Gesamtkosten, sondern nur Anteil des Mieters. If emtpy, write "0"
+  - f3109: Aufwendungen für Minijobber. Nicht Gesamtkosten, sondern nur Anteil des Mieters. If emtpy, write "0"
+  - f2626_feldmzi_1: write "1"

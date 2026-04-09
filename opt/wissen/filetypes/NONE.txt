@@ -1,0 +1,8 @@
+- Instructions for NONE: Extrahiere folgende Daten und aktualisiere das Datenmodell. Also write the ErrorMessage
+Datenmodell:
+  - DocumentType: NONE
+  - DocumentAction: replace
+  - Steuerjahr: Find out, for which year this document is. Only the year. Write none, if it is unclear
+  - ErrorMessage: Das hochgeladene Dokument konnte nicht eindeutig identifiziert werden  
+Seite: NONE
+  - f00_savefile: true

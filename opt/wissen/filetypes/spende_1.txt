@@ -1,0 +1,14 @@
+- Instructions for Spenden: Extrahiere folgende Daten und aktualisiere das Datenmodell. FÃ¼hre "Weitere Anweisungen" am Schluss aus:
+Datenmodell:
+  - DocumentType: spende_1
+  - DocumentAction: addFeldmzi_f1529
+  - ErrorMessage: none
+Seite: Förderung steuerbegünstigter Zwecke (SeitenID=92)
+  - f1528:  write "1"
+  - f1530:  write "1"
+  - f1529_savefile: Name des Ausstellers
+  - f1531: Betrag der Zuwendung
+Weitere Anweisungen
+  - f11_feldmzi_1: [(if f1531_savefile!=null) then 1]
+  - f140_feldmzi_1: [(if f1531_savefile!=null) then 1]
+  

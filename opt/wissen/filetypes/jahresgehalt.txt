@@ -1,0 +1,57 @@
+- Instructions for Lohnsteuerjahresbescheinigung: Extrahiere folgende Daten und aktualisiere das Datenmodell. Führe "Weitere Anweisungen" am Schluss aus:
+Datenmodell:
+  - DocumentType: jahresgehalt
+  - DocumentAction: addFeldmzi_f186
+  - DocumentMZI: 1
+  - Steuerjahr: Find out, for which year this document is. Only the year. Write none, if it is unclear
+  - ErrorMessage: none
+ Lohnsteuerjahresbescheinigung:
+  - f186_savefile: Name des Arbeitgebers
+  - f188_takemzi_f186: Steuerklasse/Faktor
+  - f198_takemzi_f186: Bescheinigungszeitraum: [in Format FromDay.FromMonth-UntilDay.UntilMonth, without points after month]
+  - f199_takemzi_f186: Zeiträume ohne Anspruch auf Arbeitslohn
+  - f2706_takemzi_f186: Hinweis zum Unterbrechungszeitraum. [Nur anzeigen, wenn f199 ausgefüllt ist]
+  - f201_takemzi_f186: 3. Bruttoarbeitslohn
+  - f202_takemzi_f186: 4. Lohnsteuer
+  - f203_takemzi_f186: 5. Solidaritätszuschlag
+  - f204_takemzi_f186: 6. Kirchensteuer des Arbeitnehmers
+  - f205_takemzi_f186: 7. Kirchensteuer des Ehegatten
+  - f206_takemzi_f186: 8. in 3. enthaltene Versorgungsbezüge
+  - f207_takemzi_f186: 9. Ermässigt besteuerte Versorgungsbezüge für mehrere Kalenderjahre
+  - f208_takemzi_f186: 10. Ermäßigt besteuerter Arbeitslohn für mehrere Kalenderjahre und ermäßigt besteuerte Entschädigungen
+  - f209_takemzi_f186: 11. Einbehaltene Lohnsteuer von 9. und 10. 
+  - f210_takemzi_f186: 12. Einbehaltener Solidaritätszuschlag von 9. und 10. 
+  - f211_takemzi_f186: 13. Einbehaltene Kirchensteuer des Arbeitnehmers von 9. und 10.  
+  - f212_takemzi_f186: 14. Einbehaltene Kirchensteuer des Ehegatten/Lebenspartners von 9. und 10. 
+  - f213_takemzi_f186: 15. Kurzarbeitergeld, Zuschuss zum Mutterschaftsgeld, Verdienstausfallentschädigung (Infektionsschutzgesetz), Aufstockungsbetrag und Altersteilzeitzuschlag
+  - f214_takemzi_f186: 16. Steuerfreier Arbeitslohn nach Dopelbesteuerungsabkommen
+  - f215_takemzi_f186: 16. Steuerfreier Arbeitslohn nach Auslandstätigkeitserlass
+  - f216_takemzi_f186: 17. Steuerfreie Arbeitgeberleistungen für Fahrten zwischen Wohnung und Arbeitsstätte
+  - f217_takemzi_f186: 18. Pauschalbesteuerte Arbeitgeberleistungen für Fahrten zwischen Wohnung und Arbeitsstätte
+  - f218_takemzi_f186: 19. Steuerpflichtige Entschädigungen und Arbeitslohn für mehrere Jahre, die nicht ermäßigt besteuert wurden – in 3. enthalten.
+  - f219_takemzi_f186: 20. Steuerfreie Verpflegungszuschüsse bei Auswärtstätigkeit
+  - f220_takemzi_f186: 21. Steuerfreie Arbeitgeberleistungen bei doppelter Haushaltsführung
+  - f221_takemzi_f186: 22a-Arbeitgeberanteil zur gesetzlichen Rentenversicherung
+  - f779_takemzi_f186: 22.b. Arbeitgeberanteil an berufsständischen Versorgungseinrichtungen
+  - f222_takemzi_f186: 23.a. Arbeitnehmeranteil zur gesetzlichen Rentenversicherung
+  - f780_takemzi_f186: 23.b. Arbeitnehmeranteil an berufsständischen Versorgungseinrichtungen
+  - f223_takemzi_f186: 24.a. Steuerfreie Arbeitgeberzuschüsse zur gesetzlichen Krankenversicherung
+  - f899_takemzi_f186: 24.b. Steuerfreie Arbeitgeberzuschüsse zur privaten Krankenversicherung
+  - f900_takemzi_f186: 24.c. Steuerfreie Arbeitgeberzuschüsse zur gesetzlichen Pflegeversicherung
+  - f224_takemzi_f186: Arbeitnehmeranteil zur gesetzlichen Krankenversicherung
+  - f541_takemzi_f186: Arbeitnehmeranteil zur sozialen Pflegeversicherung
+  - f542_takemzi_f186: Arbeitnehmeranteil zur Arbeitslosenversicherung
+  - f668_takemzi_f186: 28. Beiträge zur privaten Krankenversicherung und Pflege-Pflichtversicherung oder Mindestvorsorgepauschale
+  - f227_takemzi_f186: 29. Bemessungsgrundlage für die Berechnung des Versorgungsfreibetrags
+  - f228_takemzi_f186: 30. Massgebendes Kalenderjahr des Versorgungsbeginns zu 8. und/oder 9.
+  - f229_takemzi_f186: 31. Zu 8. bei unterjaehriger Zahlung: Erster Monat, für den Versorgungsbezüge gezahlt wurden.
+  - f230_takemzi_f186: 31. Zu 8. bei unterjaehriger Zahlung: Letzter Monat, für den Versorgungsbezüge gezahlt wurden.
+  - f231_takemzi_f186: 32. Sterbegeld, Kapitalauszahlungen / Abfindungen und Nachzahlungen von Versorgungsbezügen - in 3. und 8. enthalten
+  - f226_takemzi_f186: 33. Ausgezahltes Kindergeld
+  - f1470_takemzi_f186: 34. Freibetrag DBA Türkei
+  - f1022_feldmzi_1-f1023_feldmzi_1: write "1"
+  - f529_takemzi_f186: [(if f207!=null or f208!=null or f213!=null) then 1]
+  - f530_takemzi_f186: [(if f214!=null or f215!=null or f216!=null or f217!=null or f218!=null or f219!=null or f220!=null) then 1]
+
+  
+

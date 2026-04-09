@@ -1,0 +1,17 @@
+- Instructions for Rentenbezugsmitteilung: Extrahiere folgende Daten und aktualisiere den Bereich Zusatzdaten des Datenmodell. Führe "Weitere Anweisungen" am Schluss aus:
+Datenmodell:
+  - DocumentType: rentenbezugsmitteilung
+  - DocumentAction: addFeldmzi_f3104
+  - ErrorMessage: none
+- Seite: Deutsche Rentenversicherung (SeitenID=461)
+  - f3104_savefile: write "Deutsche Rentenversicherung"
+  - f1043_takemzi_f3104: write "1"
+  - f1049_takemzi_f3104: ID=1 wenn " Rente der Deutschen Rentenversicherung"
+  - f1044_takemzi_f3104: ID=1 bei ALtersrente, ID=2 bei Erwerbsunfähigkeitsrente oder Erwerbsminderungsrente, ID=3 bei Berufsunfähigkeitsrente, ID=4 bei Grosse Witwenrente, ID=5 bei Kleine Witwenrente, ID=6 bei Waisenrente, ID=7 bei Erziehungsrente
+  - f2232_takemzi_f3104: Rentenbeginn im Format TT.MM.JJJJ, Datum der Rentenanpassung fÃ¼r dieses Feld nicht verwenden
+  - f2235_takemzi_f3104: aktueller Betrag der jährlichen Rente
+  - f2236_takemzi_f3104: im Rentenbetrag erhaltener Rentenanpassungsbetrag
+  - f463_takemzi_f3104: jährlicher Anteil am Beitrag zur Krankenversicherung 
+  - f465_takemzi_f3104: jährlicher Beitrag zur Pflegeversicherung
+  - f1028_feldmzi_1-f1029_feldmzi_1: write "1"
+  - f1040_feldmzi_1: write "1"

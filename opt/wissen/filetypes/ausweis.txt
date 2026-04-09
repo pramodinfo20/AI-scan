@@ -1,0 +1,13 @@
+- Instructions for Ausweisdokument: Extrahiere folgende Daten und aktualisiere das Datenmodell.
+Datenmodell:
+  - DocumentType: ausweis
+  - DocumentAction: 
+  - ErrorMessage: none
+Seite: Persönliche Angaben (SeitenID= 4 Steuerpflichtiger/ 3 Ehefrau)
+  - f894-f1112: Find out the sex of the person. 2 if masculin, 1 if feminin
+  - e0100201_savefile-e0100901_savefile: Nachname or Name
+  - e0100301-e0100801: Vorname 
+  - e0100401-e0101001: Geburtsdatum
+  - f2270-f2271: Straße und Hausnummer
+  - e0100601-e0101701: Postleitzahl
+  - e0100602-e0101702: Wohnort

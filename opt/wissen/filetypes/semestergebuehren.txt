@@ -1,0 +1,9 @@
+- Instructions for Semestergebuehren or Semesterbeitrag: Extrahiere folgende Daten und aktualisiere den Bereich Zusatzdaten des Datenmodell. Führe "Weitere Anweisungen" am Schluss aus:
+Datenmodell:
+  - DocumentType: semestergebuehren
+  - DocumentAction: add
+  - ErrorMessage: none
+Seite Sonderausgaben:
+  - f1189_savefile-f1192_savefile: "Semestergebühren und -­beiträge" und betroffenes Semester und Name der Hochschule
+  - f1190-f1193: gesamte Beitragshöhe
+  - f12-f13: [(if f1190-f1193!=null) then 1 else 0]

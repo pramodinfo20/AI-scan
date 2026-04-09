@@ -1,0 +1,35 @@
+- Instructions for Steuerbescheinigung für Kapitalerträge: Extrahiere folgende Daten und aktualisiere das Datenmodell. Führe "Weitere Anweisungen" am Schluss aus:
+Datenmodell:
+  - DocumentType: bank
+  - DocumentAction: addFeldmzi_f573
+  - DocumentMZI: 1
+  - Steuerjahr: Find out, for which year this document is. Only the year. Write none, if it is unclear
+  - ErrorMessage: none
+Seite: Kapitalerträge
+  - f573_savefile: Name der Bank 
+  - f575_takemzi_f573: Höhe der Kapitalerträge (Zeile 7 der Anlage KAP)
+  - f577_takemzi_f573: davon: Gewinn aus Aktienveräußerungen im Sinne des § 20 Abs. 2 Satz 1 Nr. 1 EStG (Zeile 8 Anlage KAP)
+  - f2484_takemzi_f573: davon: Einkünfte aus Stillhalterprämien im Sinne des § 20 Abs. 1 Nr. 11 EStG und Gewinne aus Termingeschäften im Sinne § 20 Abs. 2 Satz 1 Nr. 3 EStG (Zeile 9 Anlage KAP)
+  - f1795_takemzi_f573: davon: Gewinne aus der Veräußerung bestandsgeschützter Alt-Anteile im Sinne des § 56 Abs. 6 Satz 1 Nr. 2 InvStG (Zeile 10 Anlage KAP)
+  - f580_takemzi_f573: davon: Ersatzbemessungsgrundlage im Sinne des § 43a Abs. 2 Satz 7, 10, 13 und 14 EStG nach Teilfreistellung und im Sinne des § 56 Abs. 3 Satz 4 InvStG Enthalten in den bescheinigten Kapitalerträgen (Zeile 11 Anlage KAP)
+  - f581_takemzi_f573: Höhe des nicht ausgeglichenen Verlustes ohne Verlust aus der Veräusserung von Aktien (Zeile 12 Anlage KAP)
+  - f582_takemzi_f573: Höhe des nicht ausgeglichenen Verlustes aus der Veräusserung von Aktien im Sinne des §20 Abs. 2 Satz 1 Nr. 1 EStG (Zeile 13 Anlage KAP)
+  - f2486_takemzi_f573: Höhe des Verlustes im Sinne des §20 Abs. 6 Satz 5 EStG (Zeile 14 Anlage KAP)
+  - f2204_takemzi_f573: Höhe des Verlustes im Sinne des §20 Abs. 6 Satz 6 EStG (Zeile 15 Anlage KAP)
+  - f583_takemzi_f573: Höhe des in Anspruch genommenen Sparer-Pauschbetrages (Zeile 16 Anlage KAP)
+  - f586_takemzi_f573: Kapitalertragsteuer (Zeile 37 Anlage KAP)
+  - f587_takemzi_f573: Solidaritätszuschlag (Zeile 38 Anlage KAP)
+  - f588_takemzi_f573: Kirchensteuer zur Kapitalertragsteuer (Zeile 39 Anlage KAP)
+  - f590_takemzi_f573: Summe der angerechneten ausländischen Steuer (Zeile 40 Anlage KAP)
+  - f591_takemzi_f573: Summe der anrechenbaren noch nicht angerechneten ausländischen Steuer (Zeile 41 Anlage KAP)
+  - f423_feldmzi_1-f424_feldmzi_1: [(if f573_savefile!=null) then 1 else 0]
+  - f2274_feldmzi_1-f2275_feldmzi_1: [(if f573_savefile!=null) then 1 else 0]
+  - f574_takemzi_f573: [(if f573_savefile!=null) then 1 else 0]
+  - f589_takemzi_f573: [(if sum(f590_takemzi_f573; f591_takemzi_f573)>0) then 1 else 0]
+  - f2496_takemzi_f573: [(if sum(f581_takemzi_f573; f582_takemzi_f573; f2486_takemzi_f573; f2204_takemzi_f573)>0) then 1 else 0]
+Weitere Anweisungen:  
+  - f423_feldmzi_1-f424_feldmzi_1: [(if f573_savefile!=null) then 1 else 0]
+  - f2274_feldmzi_1-f2275_feldmzi_1: [(if f573_savefile!=null) then 1 else 0]
+  - f574_takemzi_f573: [(if f573_savefile!=null) then 1 else 0]
+  - f589_takemzi_f573: [(if sum(f590_takemzi_f573; f591_takemzi_f573)>0) then 1 else 0]
+  - f2496_takemzi_f573: [(if sum(f581_takemzi_f573; f582_takemzi_f573; f2486_takemzi_f573; f2204_takemzi_f573)>0) then 1 else 0]

@@ -1,0 +1,17 @@
+- Instructions for Schwerbehindertenausweis: Extrahiere folgende Daten und aktualisiere das Datenmodell.
+Datenmodell:
+  - DocumentType: behinderung
+  - DocumentAction: replace
+  - ErrorMessage: none
+Seite: Behinderung (SeitenID=60)
+ - f1975_feldmzi_1-f1983_feldmzi_1: write "1"
+ - f1976_feldmzi_1-f1984_feldmzi_1: 1 wenn Merkzeichen H vermerkt ist
+ - f2198_feldmzi_1-f2199_feldmzi_1: Wert Grad der Behinderung or Wert GdB
+ - f1980_feldmzi_1-f1988_feldmzi_1: 1 wenn Merkzeichen G angegeben ist
+ - f1979_feldmzi_1-f1987_feldmzi_1: 1 wenn Merkzeichen aG angegeben ist
+ - f1977_feldmzi_1-f1985_feldmzi_1: 1 wenn Merkzeichen Bl angegeben ist
+ - f2462_feldmzi_1-f2463_feldmzi_1: 1 wenn Merkzeichen TBl angegeben ist
+ - f1978_feldmzi_1-f1986_feldmzi_1: 1 wenn Merkzeichen H angegeben ist
+ - f2200_savefile-f2202_savefile: Datum bei gültig ab, Format: MM.JJJJ
+ - f1981_feldmzi_1-f1989_feldmzi_1: 1 wenn Gültig bis: unbefristet angegeben ist
+ - f155_feldmzi_1-f154_feldmzi_1: write "1"

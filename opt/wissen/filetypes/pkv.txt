@@ -1,0 +1,13 @@
+- Instructions for Private Krankenversicherung: : Extrahiere folgende Daten und aktualisiere den Bereich Zusatzdaten des Datenmodell. Führe "Weitere Anweisungen" am Schluss aus:
+Datenmodell:
+  - DocumentType: pkv
+  - DocumentAction: replace
+  - Steuerjahr: Find out, for which year this document is. Only the year. Write none, if it is unclear
+  - ErrorMessage: none
+- Seite: Kranken- und Pflegeversicherung (SeitenID=106)
+  - f133_savefile: Haben Sie eine private Kranken- und Pflegeversicherung (1=ja, 0=nein)
+  - f2534: Zeile 23 Beitraege zur Krankenvericherung, Basisabsicherung
+  - f2535: Zeile 24 Beitraege zur Pflege-Pflichtversicherungen
+  - f2536: Zeile 25 Von der Versicherung erstattete Beitraege
+  - f2537: Zeile 27, Summe aus ueber die Basisabsicherung hinausgehenden Beitraegen zur Krankenversicherungen und Beitraegen zu zusaetzlichen Pflegeversicherungen,  oder jaehrlicher Beitrag zur Zusatzversicherung
+

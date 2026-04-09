@@ -1,0 +1,10 @@
+- Instructions for Zuweisung einer Steuernummer: Extrahiere folgende Daten und aktualisiere den Bereich Zusatzdaten des Datenmodell. 
+Datenmodell:
+  - DocumentType: stezuweisung
+  - DocumentAction:
+  - ErrorMessage: none
+Seite: Finanzamt (SeitenID=51)
+  - f809_savefile: Steuernummer für Einkommensteuererklärung
+  - f121: write "1"
+  - f120: ID for Bundesland from this List: <option value="28">Baden-Württemberg</option><option value="91">Bayern </option><option value="11">Berlin</option><option value="30">Brandenburg</option><option value="24">Bremen</option><option value="22">Hamburg</option><option value="26">Hessen</option><option value="40">Mecklenburg-Vorpommern</option><option value="23">Niedersachsen</option><option value="51">Nordrhein-Westfalen </option><option value="27">Rheinland-Pfalz</option><option value="10">Saarland</option><option value="32">Sachsen</option><option value="31">Sachsen-Anhalt</option><option value="21">Schleswig-Holstein</option><option value="41">Thüringen</option> 
+  

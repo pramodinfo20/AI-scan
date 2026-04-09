@@ -1,0 +1,15 @@
+- Instructions for Gehaltsabrechnung: Extrahiere folgende Daten und aktualisiere das Datenmodell. Führe "Weitere Anweisungen" am Schluss aus:
+Datenmodell:
+  - DocumentType: gehalt
+  - DocumentAction: add
+  - Steuerjahr: Find out, for which year this document is. Only the year. Write none, if it is unclear
+  - ErrorMessage: none
+Seite: Arbeitnehmer
+  - e0100081: Identifikationsnummer Steuerpflichtiger
+  - f1526: IBAN
+  - f600: Kontoinhaber
+  - f601: Name des Kontoinhabers (Nachname Steuerpflichtiger)
+  - f186: Name des Arbeitgebers
+  - f189: 1
+Weitere Anweisungen
+ - f1022: [(if f186!=null) then 1 else 0]

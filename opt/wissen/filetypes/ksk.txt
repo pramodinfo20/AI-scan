@@ -1,0 +1,17 @@
+- Instructions for Künstlersozialkasse: : Extrahiere folgende Daten und aktualisiere den Bereich Zusatzdaten des Datenmodell. Führe "Weitere Anweisungen" am Schluss aus:
+Datenmodell:
+  - DocumentType: ksk_kv
+  - DocumentAction: add_feldmzi
+  - Steuerjahr: Find out, for which year this document is. Only the year. Write none, if it is unclear
+  - ErrorMessage: none
+- Seite: Sonstige Beiträge zur Basisabsicherung (SeitenID=402)
+  - f603: Versichertenanteil Beitrag Krankenversicherung 
+  - f607: Versichertenanteil Beitrag Pflegeversicherung
+
+- Seite: Altersvorsorge (SeitenID=469)  
+  - f2829: Versichertenanteil Beitrag Rentenversicherung
+
+für die Felder f603, f607 und f2829 sollen die Einträge über den jeweiligen Hilfsrechner erfolgen. Als Bezeichnung könnte jeweils "Künstlersozialkasse" und die Versicherungs-Nr. genutzt werden.
+
+Weitere Anweisungen:
+ - f1380: Wenn das Feld nicht bereits belegt ist und Einträge zu f603/ f607 vorhanden sind, Listenfeld mit ID 2 (Ich zahle die Krankenversicherung nicht komplett selbst) definieren. Wenn das Feld zuvor bereits belegt war, keine Änderung.

@@ -1,0 +1,17 @@
+- Instructions for Riester-Rentenversicherung: Extrahiere folgende Daten und aktualisiere den Bereich Zusatzdaten des Datenmodell. Führe "Weitere Anweisungen" am Schluss aus:
+Datenmodell:
+  - DocumentType: riester
+  - DocumentAction: add
+  - ErrorMessage: none
+- Seite: Riester-Rentenversicherung (SeitenID=152)
+  - f787-f792: geleistete Beiträge ohne Zulage or Tilgungsleistungen ohne Zulage
+  - f786_savefile-f791_savefile: Vertragsnummer
+  - f784-f789: Anbieternummer
+  - f785-f790: Zertifizierungsnummer
+  - f2129-f2130: Mitgliedsnummer Landwirtschaftliche Alterskasse LAK
+  - f1821-f1822: write "1"
+  - f548-f549: write "1"
+  - f546-f545: write "1"
+  - f568-f569: 1, wenn Tilgungsleistung ohne Zulage >0 angegeben ist
+  - f1950-f1951: write "1"
+  - f2547-f2548: Geht eventuell aus der Bescheinigung nicht hervor. Unausgefült lassen, falls möglich

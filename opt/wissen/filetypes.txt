@@ -1,0 +1,29 @@
+ID: DocumentTypes:
+phv: Private Haftpflichtversicherung or Tierhalter Haftpflichtversicherung or Hunde Haftpflichtversicherung
+hus: Hausratversicherung
+kfz: Kfz-Versicherung
+wgv: Wohngebäudeversicherung
+ksk: Künstlersozialkasse
+nebenkosten: Nebenkostenabrechnung or Aufstellung nach §35a EStG
+behinderung: Schwerbehindertenausweis
+riester: Riester-Rentenversicherung or Bescheinigung nach §92 EStG
+ausweis: Ausweisdokument or Aufenthaltstitel or Personalausweis or Reisepass
+steuerid: Zuteilung der Identifikationsnummer
+risikolebensversicherung: Risikolebensversicherung or Risikoversicherung
+gehalt: Gehaltsabrechnung
+pkv: Private Krankenversicherung
+bank: Steuerbescheinigung für Kapitalerträge
+jahresgehalt: Jahres-Gehaltsabrechnung or Lohnsteuerjahresbescheinigung
+semestergebuehren: Semstergebuehren or Semsterbeitrag 
+rechtsschutzversicherung_normal: Rechtsschutzversicherung or Verkehrsrechtsschutz, but not Arbeitsrechsschutz
+reiseversicherung: Reiserücktrittsversicherung or Reisegepäckversicherung
+rentenbezugsmitteilung: Rentenbezugsmitteilung der deutschen Rentenversicherung
+spende_1: Bestätigung über Spende oder Geldzuwendungen im Sinne des 10b des Einkommensteuergesetzes an eine Haben Sie an gemeinnützige, mildtätige oder kirchliche Organisationen.
+unfall: Unfallversicherung
+stezuweisung: Zuteilung Steuernummer an Steuerzahler durch Finanzamt
+minijob: Minijob Haushaltsscheck-Verfahren für Beschäftigungen in Privathaushalten Bescheinigung nach $ 28h Absatz 4 Sozialgesetzbuch
+kindergeldbescheid: Bescheid über Festsetzung des Kindergeldes
+krankengeld_kind: Krankengeld bei Erkrankung eines Kindes oder Kinderverletztengeld
+ste: Einkommensteuererklärung
+xx: Steuerbescheid
+xx: Rentenbescheid

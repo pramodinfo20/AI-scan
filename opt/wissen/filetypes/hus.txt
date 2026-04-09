@@ -1,0 +1,8 @@
+- Instructions for Hausratversicherung: Extrahiere folgende Daten und aktualisiere das Datenmodell. Also write the ErrorMessage
+Datenmodell:
+  - DocumentType: hus
+  - DocumentAction: replace
+  - Steuerjahr: Find out, when the insurance is to be paid. Only the year. Write none, if it is unclear
+  - ErrorMessage: Die private Hausratversicherung lässt sich nicht in der Steuererklaerung angeben
+Seite: Hausratversicherung
+  - f00_savefile: true

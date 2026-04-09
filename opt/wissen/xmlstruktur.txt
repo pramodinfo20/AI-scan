@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocumentType>DocumentType</DocumentType>
+<DocumentAction>DocumentAction</DocumentAction>
+<DocumentMZI>DocumentMZI</DocumentMZI>
+<Steuerjahr>Steuerjahr</Steuerjahr>
+<ErrorMessage>ErrorMessage</ErrorMessage>
+<steuererklaerung>
+    <stammdaten>
+        <zuordnung>Steuerpflichtiger or Ehefrau</zuordnung> 
+        <geschlecht>man or woman</geschlecht>
+        <e0100301-e0100801>Vorname Steuerpflichtiger</e0100301-e0100801>
+        <e0100201-e0100901>Nachname Steuerpflichtiger</e0100201-e0100901>
+        ...
+    </stammdaten>
+    <zusatzdaten>
+        <f00>f00</f00>
+        ...
+    </zusatzdaten>
+</steuererklaerung>
